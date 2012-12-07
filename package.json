@@ -1,0 +1,24 @@
+{
+  "name": "Screenshot",
+  "version": "0.1.0",
+  "description": "Screenshot Module using Snapito API",
+  "main": "screenshot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repositories": [{
+    "type": "git",
+    "url": "git://github.com/Skullbock/screenshot-nodejs.git"
+  }],
+  "keywords": [
+    "screenshot",
+    "url",
+    "snapito",
+    "preview"
+  ],
+  "author": "Daniele Rosario <daniele@weble.it> (http://www.weble.it)",
+  "license": "GPLv3",
+  "dependencies": {
+    "request": "2.12.x"
+  }
+}
