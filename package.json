@@ -1,5 +1,5 @@
 {
-  "name": "Screenshot",
+  "name": "screenshot",
   "version": "0.1.0",
   "description": "Screenshot Module using Snapito API",
   "main": "screenshot.js",
