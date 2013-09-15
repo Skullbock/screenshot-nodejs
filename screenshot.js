@@ -71,7 +71,9 @@ Screenshot.prototype.screenshot = function(url, file, options, callback) {
    	options += params_string;
 
    	// Send request
-   	request(options).pipe(fs.createWriteStream(file));
+   	var fileStream = fs.createWriteStream(file);
+   	request(options).pipe(fileStream);
+   	return fileStream
 };
 
 module.exports = Screenshot;

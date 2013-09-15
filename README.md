@@ -19,7 +19,7 @@ You can also clone this repository into your `node_modules` directory.
 var snapito = require('screenshot');
 var screenshot = new snapito('yourapikey');
 
-screenshot.screenshot('http://www.google.com', 'google.png', {screen: 'desktop'}, function(file){
+screenshot.screenshot('http://www.google.com', 'google.png', {screen: 'desktop'}).on('close', function(file){
 	if (file) {
 		console.log('The file ' + file + ' was written correctly');
 	} else {
@@ -49,8 +49,8 @@ call to Snapito. Here is a list of them:
 var snapito = require('screenshot');
 var screenshot = new snapito('yourapikey');
 
-// screenshot.screenshot(url, file, options, callback)
-screenshot.screenshot('http://www.google.com', 'google.png', {screen: 'desktop'}, function(file){
+// screenshot.screenshot(url, file, options).on('event', callback)
+screenshot.screenshot('http://www.google.com', 'google.png', {screen: 'desktop'}).on('close', function(file){
 	if (file) {
 		console.log('The file ' + file + ' was written correctly');
 	} else {
